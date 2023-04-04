@@ -96,7 +96,7 @@ main{
 .primary-button img{
     width: 16px;
 }
-@media(min-width:376px){
+@media(min-width:640px){
     .card{
         grid-template-columns: 1fr 1fr;
         width: 579px;
