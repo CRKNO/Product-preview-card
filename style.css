@@ -45,7 +45,7 @@ main{
     padding-bottom: 20px;
 }
 .information-container p{
-    font-size: 14px;
+    font-size: var(--paragraph);
     line-height: 22px;
 
     color: var(--dark-grayish-blue);
