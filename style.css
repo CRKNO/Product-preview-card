@@ -9,8 +9,11 @@
 }
 body{
     margin:0;
-    font-family: 'Fraunces', serif;
     font-family: 'Montserrat', sans-serif;
+}
+h1,
+p{
+    margin:0;
 }
 main{
     display: grid;
@@ -21,13 +24,11 @@ main{
     background-color: var(--cream);
 }
 .card{
-    display:flex;
-    flex-direction: column;
+    display:grid;
     gap:10px;
     
     width: 336px;
     border-radius: 10px;
-    padding-bottom:20px;
 
     background-color:var(--white);
     overflow: hidden;
@@ -38,8 +39,10 @@ main{
 .information-container{
     display: flex;
     flex-direction: column;
-    padding-inline: 22px;
     gap:16px;
+    
+    padding-inline: 30px;
+    padding-bottom: 20px;
 }
 .information-container p{
     font-size: 14px;
@@ -47,7 +50,13 @@ main{
 
     color: var(--dark-grayish-blue);
 }
-.information-container  .description h1{
+.description{
+    display: grid;
+    gap:20px;
+
+    padding-top:36px;
+}
+.description h1{
     font-family: 'Fraunces', serif;
 
     color:var(--very-dark-blue);
@@ -86,4 +95,16 @@ main{
 }
 .primary-button img{
     width: 16px;
+}
+@media(min-width:376px){
+    .card{
+        grid-template-columns: 1fr 1fr;
+        width: 579px;
+        gap:0;
+    }
+    .product-image{
+        height: 100%;
+
+        content:url("./images/image-product-desktop.jpg");
+    }
 }
